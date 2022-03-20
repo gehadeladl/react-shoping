@@ -5,14 +5,13 @@ import Header from './components/Header/Header';
 import Products from './components/Products/Products';
 import data from './data'
 function App() {
-  const [product, setProduct] = useState(data)
-  console.log(product)
+  const [products, setProducts] = useState(data)
   return (
     <div className='layout'>
       <Header/>
       <main>
         <div className='wrapper'>
-            <Products product={product}/>
+            <Products products={products}/>
             <div className='filterEl'>Filter</div>
         </div>
       </main>
