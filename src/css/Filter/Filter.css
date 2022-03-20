@@ -1,0 +1,27 @@
+.wrapper .filter-wrapper {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+}
+.wrapper .filter-wrapper .filter-title {
+  background-color: #2a5ea2;
+  padding: 8px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wrapper .filter-wrapper > div {
+  padding: 5px 20px;
+  margin-bottom: 13px;
+}
+.wrapper .filter-wrapper .filter-select {
+  height: 40px;
+  border: 1px solid #ddd;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
