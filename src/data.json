@@ -9,23 +9,23 @@
     },
     {
         "id"    : 2 , 
-        "title" : "Office Chair" ,
+        "title" : "Chair" ,
         "image" : "images/image2.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 100, 
         "size"  : ["md" , "xl"]
     },
     {
-        "id"    : 1 , 
-        "title" : "Computer Monitor" ,
+        "id"    : 3 , 
+        "title" : "Monitor" ,
         "image" : "images/image3.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 150, 
         "size"  : ["lg" , "xl"]
     },
     {
-        "id"    : 1 , 
-        "title" : "Paper Printer" ,
+        "id"    : 4 , 
+        "title" : "Printer" ,
         "image" : "images/image4.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 50, 
