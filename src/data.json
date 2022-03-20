@@ -1,0 +1,34 @@
+[
+    {
+        "id"    : 1 , 
+        "title" : "laptop" ,
+        "image" : "images/image1.png" ,
+        "desc"  : "Lorem Ipsum is simply dummy text" ,
+        "price" : 300 , 
+        "size"  : ["sm" , "md"]
+    },
+    {
+        "id"    : 2 , 
+        "title" : "Office Chair" ,
+        "image" : "images/image2.png" ,
+        "desc"  : "Lorem Ipsum is simply dummy text" ,
+        "price" : 100, 
+        "size"  : ["md" , "xl"]
+    },
+    {
+        "id"    : 1 , 
+        "title" : "Computer Monitor" ,
+        "image" : "images/image3.png" ,
+        "desc"  : "Lorem Ipsum is simply dummy text" ,
+        "price" : 150, 
+        "size"  : ["lg" , "xl"]
+    },
+    {
+        "id"    : 1 , 
+        "title" : "Paper Printer" ,
+        "image" : "images/image4.png" ,
+        "desc"  : "Lorem Ipsum is simply dummy text" ,
+        "price" : 50, 
+        "size"  : ["md" , "xl"]
+    }
+]
