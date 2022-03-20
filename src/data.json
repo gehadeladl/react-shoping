@@ -13,7 +13,7 @@
         "image" : "images/image2.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 100, 
-        "size"  : ["md" , "xl"]
+        "size"  : ["md" , "lg"]
     },
     {
         "id"    : 3 , 
