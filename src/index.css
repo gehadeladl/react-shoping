@@ -24,7 +24,15 @@
 
 main{
     grid-area: main;
+    margin: 30px 0;
 }
-footer{
-    grid-area: footer;
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.wrapper .filterEl {
+    width: 30%;
+    background-color: aquamarine;
 }
