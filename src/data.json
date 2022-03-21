@@ -5,7 +5,7 @@
         "image" : "images/image1.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 300 , 
-        "size"  : ["sm" , "md"]
+        "sizes"  : ["SM" , "MD"]
     },
     {
         "id"    : 2 , 
@@ -13,7 +13,7 @@
         "image" : "images/image2.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 100, 
-        "size"  : ["md" , "lg"]
+        "sizes"  : ["MD" , "LG"]
     },
     {
         "id"    : 3 , 
@@ -21,7 +21,7 @@
         "image" : "images/image3.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 150, 
-        "size"  : ["lg" , "xl"]
+        "sizes"  : ["LG" , "XL"]
     },
     {
         "id"    : 4 , 
@@ -29,6 +29,6 @@
         "image" : "images/image4.png" ,
         "desc"  : "Lorem Ipsum is simply dummy text" ,
         "price" : 50, 
-        "size"  : ["md" , "xl"]
+        "sizes"  : ["MD" , "XL"]
     }
 ]
