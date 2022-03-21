@@ -1,24 +1,24 @@
 import './../../css/Filter/Filter.css'
-const Filter = () => {
+const Filter = ({handelFilterSize , handelFilterOrder , size , sort}) => {
     return(  
         <div className='filter-wrapper'>
             <h2 className='filter-title'>Filter</h2>
             <div className='numProduct'>Number Of Products : 4 </div>
             <div className='filter-by-size'>
                 <span>Filter</span>
-                <select className='filter-select'>
-                    <option value='all'>ALL</option>
-                    <option value='sm'>SM</option>
-                    <option value='md'>MD</option>
-                    <option value='lg'>LG</option>
-                    <option value='xl'>XL</option>
+                <select value={size} className='filter-select' onChange={handelFilterSize}>
+                    <option value="ALL">ALL</option>
+                    <option value="SM">SM</option>
+                    <option value="MD">MD</option>
+                    <option value="LG">LG</option>
+                    <option value="XL">XL</option>
                 </select>
             </div>
             <div className='filter-by-size'>
                 <span>Order</span>
-                <select className='filter-select'>
+                <select className='filter-select' onChange={handelFilterOrder} value={sort}>
                     <option value='latest'>Latest</option>
-                    <option value='sm'>Lower</option>
+                    <option value='lowest'>Lowest</option>
                     <option value='highest'>Highest</option>
                 </select>
             </div>
