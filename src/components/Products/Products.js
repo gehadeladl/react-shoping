@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import './../../css/Products/Products.css'
 
-const Products = ({products}) => {
+const Products = ({products , addCart}) => {
     const [pro, setPro] = useState("")
     const openModal = (pro) => {
         setPro(pro)
@@ -25,7 +25,7 @@ const Products = ({products}) => {
                                 <p> {product.title} </p>
                                 <p> {product.price} $</p>
                             </div>
-                            <button className='addCart'>Add To Cart</button>
+                            <button className='addCart' onClick={() => addCart(product)}>Add To Cart</button>
                         </div>
                     )
                 })

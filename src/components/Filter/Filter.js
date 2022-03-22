@@ -1,9 +1,9 @@
 import './../../css/Filter/Filter.css'
-const Filter = ({handelFilterSize , handelFilterOrder , size , sort}) => {
+const Filter = ({handelFilterSize , handelFilterOrder , productsNumber , size , sort}) => {
     return(  
         <div className='filter-wrapper'>
             <h2 className='filter-title'>Filter</h2>
-            <div className='numProduct'>Number Of Products : 4 </div>
+            <div className='numProduct'>Number Of Products : {productsNumber} </div>
             <div className='filter-by-size'>
                 <span>Filter</span>
                 <select value={size} className='filter-select' onChange={handelFilterSize}>
