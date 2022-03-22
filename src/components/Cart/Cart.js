@@ -1,6 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { useState } from 'react';
+import Form from '../Form/Form';
 import './../../css/Cart/Cart.css'
 const Cart = ({cartItem , removeCart}) => {
+    const [showForm , setShowform] = useState(false) ; 
+    
     return(  
         <div className="cart-wrapper">
             <div className="cart-title"> {cartItem.length === 0 ? 'Empty Card' : ` There Is ${cartItem.length} Products In Cart `} </div>
@@ -22,8 +26,19 @@ const Cart = ({cartItem , removeCart}) => {
                         )
                     })
                 }
-                
             </div>
+            {
+                cartItem.length !== 0 && (
+                    <div className='cart-footer'>
+                        <div className='total'>Total Price : {cartItem.reduce((acc , p) => {
+                            return acc + p.price 
+                        } , 0)} $</div>
+                        <button onClick={() => setShowform(true)}>Select Products</button>
+                    </div>
+                )
+            }
+            <Form showForm={showForm} setShowform={setShowform} />
+            
         </div>
     );
 }
