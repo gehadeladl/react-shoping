@@ -1,32 +1,41 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useState } from 'react';
 import Form from '../Form/Form';
-import './../../css/Cart/Cart.css'
+import './../../css/Cart/Cart.css';
+import Fade from 'react-reveal/Fade';
+
 const Cart = ({cartItem , removeCart}) => {
     const [showForm , setShowform] = useState(false) ; 
-    
+
+//############################################
+
     return(  
         <div className="cart-wrapper">
             <div className="cart-title"> {cartItem.length === 0 ? 'Empty Card' : ` There Is ${cartItem.length} Products In Cart `} </div>
-            <div className="cart-items">
-                {
-                    cartItem.map((item) => {
-                        return(
-                            <div className="cart-item" key={item.id}>
-                                <img src={item.image} />
-                                <div className="cart-info">
-                                    <div>
-                                        <p> {item.title} </p>
-                                        <p> {item.qun} </p>
-                                        <p> {item.price} $ </p>
+            <Fade bottom cascade>
+                <div className="cart-items">
+                    {
+                        cartItem.map((item) => {
+                            return(
+                                <div className="cart-item" key={item.id}>
+                                    <img src={item.image} />
+                                    <div className="cart-info">
+                                        <div>
+                                            <p> {item.title} </p>
+                                            <p> {item.qun} </p>
+                                            <p> {item.price} $ </p>
+                                        </div>
+                                        <button onClick={() => removeCart(item.id)}>Remove</button>
                                     </div>
-                                    <button onClick={() => removeCart(item.id)}>Remove</button>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+                            )
+                        })
+                    }
+                </div>
+            </Fade>
+
+{/*#######################################################*/}
+
             {
                 cartItem.length !== 0 && (
                     <div className='cart-footer'>
@@ -37,8 +46,10 @@ const Cart = ({cartItem , removeCart}) => {
                     </div>
                 )
             }
+
+{/*#######################################################*/}
+
             <Form showForm={showForm} setShowform={setShowform} />
-            
         </div>
     );
 }

@@ -13,12 +13,16 @@ function App() {
   const [sort, setSort] = useState('') ;
   const [cartItem , setCartItem] = useState(JSON.parse(localStorage.getItem('cartItem')))
 
+/*#######################################################*/
+
   useEffect(() => {
     localStorage.setItem('cartItem' , JSON.stringify(cartItem))
   } , [cartItem])
+
+/*#######################################################*/
+
   const handelFilterSize = (e) => {
     setSize(e.target.value) ;
-
     if(e.target.value == "ALL"){
       setProducts(data)
     }else{
@@ -26,6 +30,8 @@ function App() {
       setProducts(newProducts)
     }
   }
+
+/*#######################################################*/
 
   const handelFilterOrder = (e) => {
     let order = e.target.value ; 
@@ -42,6 +48,8 @@ function App() {
     setProducts(newProducts)
   }
   
+/*#######################################################*/
+
   const addCart = (product) => {
     let cartItemClone = [...cartItem] ;
     let isProductExist = false ; 
@@ -57,10 +65,15 @@ function App() {
     setCartItem(cartItemClone)
   }
   
+/*#######################################################*/
+
   const removeCart = (id) => {
     let cartItemClone = cartItem.filter(item => item.id !== id)
     setCartItem(cartItemClone) 
   }
+
+/*#######################################################*/
+
   return (
     <div className='layout'>
       <Header/>
