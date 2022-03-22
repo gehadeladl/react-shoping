@@ -1,5 +1,7 @@
-import './../../css/Filter/Filter.css'
+import './../../css/Filter/Filter.css';
+
 const Filter = ({handelFilterSize , handelFilterOrder , productsNumber , size , sort}) => {
+
     return(  
         <div className='filter-wrapper'>
             <h2 className='filter-title'>Filter</h2>
@@ -14,6 +16,9 @@ const Filter = ({handelFilterSize , handelFilterOrder , productsNumber , size , 
                     <option value="XL">XL</option>
                 </select>
             </div>
+
+{/*#######################################################*/}
+
             <div className='filter-by-size'>
                 <span>Order</span>
                 <select className='filter-select' onChange={handelFilterOrder} value={sort}>
